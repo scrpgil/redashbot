@@ -49,7 +49,7 @@ export const config: Config = {
   token: process.env.SLACK_BOT_TOKEN!,
   signingSecret: process.env.SLACK_SIGNING_SECRET!,
   port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
-  browser: (process.env.BROWSER || 'chromium') as Engine,
+  browser: (process.env.BROWSER || 'webkit') as Engine,
   sleep: process.env.SLEEP_TIME ? parseFloat(process.env.SLEEP_TIME) : 1000,
   hosts,
 }

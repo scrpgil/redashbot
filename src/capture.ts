@@ -2,7 +2,10 @@ import playwright from 'playwright'
 import sleep from 'await-sleep'
 import { config } from './config'
 
-const engine = playwright[config.browser]
+
+
+// const engine = playwright["chromium"]
+const engine = playwright["chromium"]
 
 export async function capture(url: string): Promise<Buffer> {
   const browser = await engine.launch({
